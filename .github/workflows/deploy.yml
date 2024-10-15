@@ -15,9 +15,9 @@ jobs:
           npm ci
           npm run build
       
-      - name: Deploy # lol
+      - name: Deploy
         uses: JamesIves/github-pages-deploy-action@4.1.5
         with:
-          ACCESS_TOKEN: ${{ secrets.GH_TOKEN }}  # Use the secret here
-          BRANCH: gh-pages
-          FOLDER: dist
+          token: ${{ secrets.PAT }}  # Use your PAT here
+          branch: gh-pages  # Deploy to the gh-pages branch
+          folder: dist  # Folder containing the built files
