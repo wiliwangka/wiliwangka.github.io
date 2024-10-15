@@ -18,6 +18,6 @@ jobs:
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@4.1.5
         with:
-          ACCESS_TOKEN: ${{ secrets.GH_TOKEN }}  # Use the secret here
-          BRANCH: gh-pages
-          FOLDER: dist
+          token: ${{ secrets.GITHUB_TOKEN }}  # Use the default GitHub token
+          branch: main  # Deploy to the main branch
+          folder: dist  # Folder containing the built files
