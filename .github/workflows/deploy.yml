@@ -19,5 +19,5 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@4.1.5
         with:
           token: ${{ secrets.GITHUB_TOKEN }}  # Use the default GitHub token
-          branch: main  # Deploy to the main branch
+          branch: gh-pages  # Deploy to the main branch
           folder: dist  # Folder containing the built files
